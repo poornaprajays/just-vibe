@@ -1,20 +1,21 @@
-import pesceLogo from "@/assets/pesce-logo.jpeg";
-import dotLogo from "@/assets/dot-logo.jpeg";
+import pesceCollegeLogo from "@/assets/pesce-college-logo.jpeg";
+import dataScienceLogo from "@/assets/data-science-logo.jpeg";
+import dotClubLogo from "@/assets/dot-club-logo.jpeg";
 
 const OrganizedBySection = () => {
   const organizations = [
     {
-      logo: pesceLogo,
+      logo: pesceCollegeLogo,
       title: "P.E.S College of Engineering",
       subtitle: "Mandya",
     },
     {
-      logo: pesceLogo,
+      logo: dataScienceLogo,
       title: "Department of Data Science",
       subtitle: "Established 2023",
     },
     {
-      logo: dotLogo,
+      logo: dotClubLogo,
       title: "DOT Club",
       subtitle: "Developers Of Tomorrow",
     },
@@ -34,11 +35,11 @@ const OrganizedBySection = () => {
               className="glass neon-border p-8 rounded-2xl hover:scale-105 transition-all duration-300 group cursor-pointer"
             >
               <div className="flex flex-col items-center text-center space-y-4">
-                <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white/80 group-hover:border-neon-pink transition-all duration-300 glow-pink bg-white/10 backdrop-blur-sm p-2">
+                <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white/80 group-hover:border-neon-pink transition-all duration-300 glow-pink">
                   <img
                     src={org.logo}
                     alt={org.title}
-                    className="w-full h-full object-contain"
+                    className="w-full h-full object-cover"
                   />
                 </div>
                 <div>
