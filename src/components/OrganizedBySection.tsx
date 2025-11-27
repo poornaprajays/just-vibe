@@ -1,6 +1,6 @@
 import pesceCollegeLogo from "@/assets/pesce-college-logo.jpeg";
-import dataScienceLogo from "@/assets/data-science-logo.jpeg";
-import dotClubLogo from "@/assets/dot-club-logo.jpeg";
+import dataScienceLogo from "@/assets/data-science-logo-clean.png";
+import dotClubLogo from "@/assets/dot-club-logo-clean.png";
 
 const OrganizedBySection = () => {
   const organizations = [
