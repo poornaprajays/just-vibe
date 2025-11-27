@@ -41,20 +41,26 @@ const HeroSection = () => {
 
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16 animate-fade-in">
-          <Button 
-            size="lg" 
+          <Button
+            asChild
+            size="lg"
             className="bg-neon-pink hover:bg-neon-pink/90 text-white px-8 py-6 text-lg rounded-full glow-pink hover:scale-105 transition-all duration-300"
           >
-            <Sparkles className="mr-2 h-5 w-5" />
-            Register Now
+            <a href="#register">
+              <Sparkles className="mr-2 h-5 w-5" />
+              Register Now
+            </a>
           </Button>
-          <Button 
-            size="lg" 
-            variant="outline" 
+          <Button
+            asChild
+            size="lg"
+            variant="outline"
             className="border-2 border-neon-blue text-neon-blue hover:bg-neon-blue/10 px-8 py-6 text-lg rounded-full glow-blue hover:scale-105 transition-all duration-300"
           >
-            <BookOpen className="mr-2 h-5 w-5" />
-            Rule Book
+            <a href="http://digil.ink/l/5040DGRCHO" target="_blank" rel="noopener noreferrer">
+              <BookOpen className="mr-2 h-5 w-5" />
+              Rule Book
+            </a>
           </Button>
         </div>
 

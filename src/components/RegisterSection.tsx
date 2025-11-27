@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { BorderBeam } from "@/components/ui/border-beam";
 import { Users, Clock, Trophy } from "lucide-react";
 
 const RegisterSection = () => {
@@ -21,7 +22,7 @@ const RegisterSection = () => {
   ];
 
   return (
-    <section className="py-20 relative">
+    <section id="register" className="py-20 relative">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gradient">
@@ -38,9 +39,17 @@ const RegisterSection = () => {
               return (
                 <div
                   key={index}
-                  className="glass neon-border p-6 rounded-2xl hover:scale-105 transition-all duration-300 group"
+                  className="glass neon-border relative overflow-hidden p-6 rounded-2xl hover:scale-105 transition-all duration-300 group"
                 >
-                  <div className="flex flex-col items-center text-center space-y-3">
+                  <BorderBeam
+                    className="opacity-80"
+                    size={220}
+                    duration={14}
+                    delay={index * 2}
+                    colorFrom="hsl(var(--neon-pink))"
+                    colorTo="hsl(var(--neon-blue))"
+                  />
+                  <div className="relative flex flex-col items-center text-center space-y-3">
                     <div className="w-16 h-16 rounded-full bg-gradient-to-r from-neon-pink via-neon-purple to-neon-blue flex items-center justify-center group-hover:animate-glow">
                       <Icon className="h-8 w-8 text-white" />
                     </div>
@@ -58,11 +67,17 @@ const RegisterSection = () => {
 
           {/* Register Button */}
           <Button
+            asChild
             size="lg"
             className="bg-gradient-to-r from-neon-pink via-neon-purple to-neon-blue hover:opacity-90 text-white px-12 py-8 text-xl rounded-full glow-pink hover:scale-110 transition-all duration-300 animate-glow"
-            onClick={() => window.open("#", "_blank")}
           >
-            Register Now
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLScwf4Frb0YXB3cCLywk7MV22TOrhWOxysnTSE6roSGdTWJEjw/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Register Now
+            </a>
           </Button>
         </div>
       </div>

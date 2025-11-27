@@ -1,6 +1,7 @@
 import pesceCollegeLogo from "@/assets/pesce-college-logo.jpeg";
 import dataScienceLogo from "@/assets/data-science-logo-clean.png";
 import dotClubLogo from "@/assets/dot-club-logo-clean.png";
+import { cn } from "@/lib/utils";
 
 const OrganizedBySection = () => {
   const organizations = [
@@ -8,16 +9,22 @@ const OrganizedBySection = () => {
       logo: pesceCollegeLogo,
       title: "P.E.S College of Engineering",
       subtitle: "Mandya",
+      logoClass: "object-cover scale-110",
+      frameClass: "bg-white",
     },
     {
       logo: dataScienceLogo,
       title: "Department of Data Science",
       subtitle: "Established 2023",
+      logoClass: "object-contain p-3",
+      frameClass: "bg-background/60",
     },
     {
       logo: dotClubLogo,
       title: "DOT Club",
       subtitle: "Developers Of Tomorrow",
+      logoClass: "object-contain p-4",
+      frameClass: "bg-background/60",
     },
   ];
 
@@ -35,11 +42,16 @@ const OrganizedBySection = () => {
               className="glass neon-border p-8 rounded-2xl hover:scale-105 transition-all duration-300 group cursor-pointer"
             >
               <div className="flex flex-col items-center text-center space-y-4">
-                <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white/80 group-hover:border-neon-pink transition-all duration-300 glow-pink bg-white">
+                <div
+                  className={cn(
+                    "w-36 h-36 rounded-full overflow-hidden border-[5px] border-white/80 group-hover:border-neon-pink transition-all duration-300 glow-pink",
+                    org.frameClass,
+                  )}
+                >
                   <img
                     src={org.logo}
                     alt={org.title}
-                    className="w-full h-full object-cover scale-110"
+                    className={cn("w-full h-full", org.logoClass)}
                   />
                 </div>
                 <div>
