@@ -34,11 +34,11 @@ const OrganizedBySection = () => {
               className="glass neon-border p-8 rounded-2xl hover:scale-105 transition-all duration-300 group cursor-pointer"
             >
               <div className="flex flex-col items-center text-center space-y-4">
-                <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-neon-pink/30 group-hover:border-neon-pink transition-all duration-300 glow-pink">
+                <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white/80 group-hover:border-neon-pink transition-all duration-300 glow-pink bg-white/10 backdrop-blur-sm p-2">
                   <img
                     src={org.logo}
                     alt={org.title}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain"
                   />
                 </div>
                 <div>
