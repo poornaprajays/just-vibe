@@ -57,7 +57,7 @@ const HeroSection = () => {
             variant="outline"
             className="border-2 border-neon-blue text-neon-blue hover:bg-neon-blue/10 px-8 py-6 text-lg rounded-full glow-blue hover:scale-105 transition-all duration-300"
           >
-            <a href="http://digil.ink/l/5040DGRCHO" target="_blank" rel="noopener noreferrer">
+            <a href="https://drive.google.com/file/d/1WgCFS1hyetSdcd40K53T5GY5lxTHMPuO/view?usp=sharing" target="_blank" rel="noopener noreferrer">
               <BookOpen className="mr-2 h-5 w-5" />
               Rule Book
             </a>
